@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="balancedenchanting"
+version="${file.jarVersion}"
+displayName="Balanced Enchanting"
+authors="tfar"
+description='Balanced Enchanting adjusts XP and anvil costs to keep enchanting progression fair across worlds and modpacks.'
+
+[[dependencies.balancedenchanting]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.balancedenchanting]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
+[[mixins]]
+config="balancedenchanting.mixins.json"
